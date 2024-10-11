@@ -270,7 +270,21 @@ nav {
 .third {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 
+    h3 {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0;
+        font-weight: 200;
+    }
 
     .up {
         height: 50vh;
@@ -293,18 +307,32 @@ nav {
             justify-content: space-between;
             padding: 15px;
 
-            h3 {
-                font-size: 20px;
-                line-height: 26px;
-                letter-spacing: 1.5px;
-            }
+        }
+    }
 
-            h4 {
-                font-size: 20px;
-                line-height: 26px;
-                letter-spacing: 0;
-                font-weight: 200;
-            }
+    .down {
+        height: 50vh;
+        background-image: url(/images/background3_2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+
+        .first_text_box {
+            // width: 20vw;
+            // height: 30vh;
+            background-color: #000000a9;
+            grid-column: 9/14;
+            grid-row: 4/14;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+
+
+
         }
     }
 }
