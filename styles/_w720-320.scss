@@ -341,7 +341,7 @@
             flex-wrap: wrap;
 
             .text_box {
-                width: 60%;
+                width: 90%;
                 height: 90%;
                 display: flex;
                 flex-direction: column;
@@ -355,18 +355,17 @@
                    align-items: center;
                    justify-content: space-around;
                     flex-wrap: wrap;
-                    height: 50vw;
+                    height: 80vh;
+                    width: 80vw ;
 
                     img {
     
-                        width: 60%;
+                        width: 100%;
                       
                     }
 
                     .text {
-                        width: 50vw;
-                       
-                        
+                        width: 80vw;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
