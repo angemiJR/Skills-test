@@ -124,7 +124,10 @@ nav {
     justify-content: space-around;
     align-items: center;
 
-
+  .nav{
+    visibility: hidden;
+    position: absolute;
+  }
 
     ul {
         width: 40vw;

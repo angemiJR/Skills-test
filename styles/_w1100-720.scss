@@ -124,8 +124,67 @@
         justify-content: space-around;
         align-items: center;
 
+        .nav {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+
+
+            a:not(:first-child) {
+                display: none;
+            }
+
+            a.icon {
+                float: right;
+                display: block;
+        
+            }
+
+            &.responsive {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                bottom: 5px;
+                right: 89px;
+             
+          
+                // border: 1px solid red;
+
+                // .icon {
+                //     position: absolute;
+                //     right: 0;
+                //     bottom: 0;
+                // }
+
+                a {
+
+                    text-align: right;
+                    float: left;
+                    display: block;
+                   
+
+                    text-decoration: none;
+                    line-height: 40px;
+                    font-family: "Aleo", system-ui;
+                    font-size: 14px;
+                    font-optical-sizing: auto;
+                    font-weight: weight;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+
+            i {
+                color: $white;
+            }
+        }
+
         h4 {
             visibility: hidden;
+            position: absolute;
         }
 
 
@@ -353,21 +412,21 @@
                     // border: 1px solid red;
                     display: flex;
                     flex-direction: column;
-                   align-items: center;
-                   justify-content: space-around;
+                    align-items: center;
+                    justify-content: space-around;
                     flex-wrap: wrap;
                     height: 50vw;
 
                     img {
-    
+
                         width: 60%;
-                      
+
                     }
 
                     .text {
                         width: 50vw;
-                       
-                        
+
+
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
