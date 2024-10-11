@@ -1,0 +1,432 @@
+@import "text_styles";
+@import "colors";
+@import "styles";
+
+
+
+@media screen and (min-width: 1110px) and (max-width: 1500px){
+    
+.first {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/background_1.png);
+    @include background;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    .text {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.tittle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.safe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 30vw;
+    height: 36px;
+}
+
+::placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: $white;
+    text-transform: capitalize;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color: $grey;
+    text-align: center;
+
+}
+
+button {
+    width: 153px;
+    height: 41px;
+    background-color: $blue;
+    border: 3px solid $white;
+    margin-left: -10px;
+
+    font-family: "Aleo", system-ui;
+    font-size: 14px;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $white;
+
+    &:hover {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+
+
+.scroll {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-self: center;
+
+    i {
+        color: $white;
+        margin-top: -10px;
+
+        &:hover {
+            font-size: 30px;
+
+
+        }
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+    }
+
+}
+
+nav {
+    width: 100%;
+    height: 7vh;
+    background-color: $blue;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+    ul {
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                font-family: "Aleo", system-ui;
+                font-size: 14px;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+                color: $white;
+
+                &:hover {
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
+
+.btn_other {
+    width: 200px;
+    height: 55px;
+    border: none;
+    margin: 0;
+
+    &:hover {
+        background-color: $grey;
+        transform: scale(1.1);
+    }
+}
+
+.second {
+    @include whole_page;
+
+
+    .picture {
+        height: 70vh;
+        background-image: url(/images/background_2.png);
+        @include background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        .container {
+            width: 70vw;
+            height: 50vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .left_container {
+            width: 40%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            // border: 1px solid red;
+        }
+
+        .right_container {
+
+            height: 460px;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            // border: 1px solid red;
+
+            .one {
+                display: flex;
+                align-self: flex-end;
+            }
+
+            img {
+                height: 220px;
+            }
+        }
+    }
+
+    .gray_square {
+        height: 30vh;
+        background-color: $grey2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40vw;
+            margin-bottom: -20px;
+        }
+
+        .icons {
+            width: 50vw;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            i {
+                color: $blue;
+                font-size: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: $grey2;
+            }
+
+            h5 {
+                font-size: 28px;
+                font-weight: 200;
+                margin-top: 15px;
+            }
+
+            .fa-circle-check {
+                color: #FF6363;
+            }
+        }
+
+    }
+}
+
+.third {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0;
+        font-weight: 200;
+    }
+
+    .up {
+        height: 50vh;
+        background-image: url(/images/background3_1.png);
+        @include background;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+
+        .first_text_box {
+            // width: 20vw;
+            // height: 30vh;
+            background-color: #000000a9;
+            grid-column: 4/9;
+            grid-row: 4/14;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+
+        }
+    }
+
+    .down {
+        height: 50vh;
+        background-image: url(/images/background3_2.png);
+        @include background;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+
+        .first_text_box {
+            // width: 20vw;
+            // height: 30vh;
+            background-color: #000000a9;
+            grid-column: 9/14;
+            grid-row: 4/14;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+
+
+
+        }
+    }
+}
+
+
+.fourth {
+    @include whole_page;
+    position: relative;
+
+    h5 {
+        font-size: 36px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0;
+        font-weight: 300;
+    }
+
+    .up {
+        height: 70vh;
+        background-image: url(/images/background4.png);
+        @include background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text_box {
+            width: 60%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .paragraph {
+                // border: 1px solid red;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    height: 100%;
+                    max-height: 284px;
+                }
+
+                .text {
+                    width: 30vw;
+                    padding: 25px;
+                    padding-left: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 30vh;
+        background-color: $grey2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0;
+
+        h2 {
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3.4px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 1.6px;
+            text-align: center;
+        }
+
+.footer{
+    height: 80px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        .icons {
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+
+            i {
+                color: $white;
+            }
+        }
+    }
+}
+
+}
