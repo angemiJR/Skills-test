@@ -374,11 +374,12 @@ nav {
 
                 .text {
                     width: 30vw;
+                    height: 30vh;
                     padding: 25px;
                     padding-left: 50px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: space-around;
                 }
             }
 
