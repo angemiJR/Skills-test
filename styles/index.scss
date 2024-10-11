@@ -165,17 +165,17 @@ nav {
     margin: 0;
 
     &:hover {
-        background-color:$grey;
+        background-color: $grey;
         transform: scale(1.1);
     }
 }
 
-.second{
+.second {
     width: 100vw;
     height: 100vh;
- 
 
-    .picture{
+
+    .picture {
         height: 70vh;
         background-image: url(/images/background_2.png);
         background-size: cover;
@@ -186,20 +186,43 @@ nav {
         align-items: center;
         margin: auto;
 
-        .container{
+        .container {
             width: 70vw;
-            height: 60vh;
+            height: 50vh;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
         }
-        .left_container{
-            width: 45%;
-            height: 60%;
+
+        .left_container {
+            width: 40%;
+            height: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
+            border: 1px solid red;
+        }
+
+        .right_container {
+        
+            height: 460px;
+            width:45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid red;
+
+            .one {
+                display: flex;
+                align-self: flex-end;
+            }
+
+            img {
+
+                height: 220px;
+            }
         }
     }
 }
