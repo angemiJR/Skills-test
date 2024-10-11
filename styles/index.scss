@@ -1,5 +1,6 @@
 @import "text_styles";
 @import "colors";
+@import "styles";
 
 body {
     width: 100vw;
@@ -13,8 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url(/images/background_1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -171,16 +171,13 @@ nav {
 }
 
 .second {
-    width: 100vw;
-    height: 100vh;
+    @include whole_page;
 
 
     .picture {
         height: 70vh;
         background-image: url(/images/background_2.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include background;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -289,9 +286,7 @@ nav {
     .up {
         height: 50vh;
         background-image: url(/images/background3_1.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include background;
         display: grid;
         grid-template-columns: repeat(16, 1fr);
         grid-template-rows: repeat(15, 1fr);
@@ -313,9 +308,7 @@ nav {
     .down {
         height: 50vh;
         background-image: url(/images/background3_2.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+       @include background;
         display: grid;
         grid-template-columns: repeat(16, 1fr);
         grid-template-rows: repeat(15, 1fr);
@@ -334,5 +327,71 @@ nav {
 
 
         }
+    }
+}
+
+
+.fourth {
+    @include whole_page;
+    position: relative;
+
+    h5 {
+        font-size: 36px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0;
+        font-weight: 300;
+    }
+
+    .up {
+        height: 70vh;
+        background-image: url(/images/background4.png);
+        @include background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text_box {
+            width: 60%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .paragraph {
+                // border: 1px solid red;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                   height: 100%;
+                   max-height: 284px;
+                }
+
+                .text {
+                    width: 30vw;
+                    padding: 25px;
+                    padding-left: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 30vh;
+        background-color: $grey2;
+        display: flex;
+        position: absolute;
+        bottom: 0;
     }
 }
